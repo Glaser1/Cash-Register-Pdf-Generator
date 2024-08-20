@@ -127,6 +127,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "media/"
-LOCALHOST = "http://172.20.10.3:8000"
+LOCALHOST = ""
 PDF_NAME = "cash_register.pdf"
 PDF_PATH = os.path.join(MEDIA_ROOT, PDF_NAME)
