@@ -64,7 +64,7 @@ def generate_pdf_and_qr_code(html):
         qr_code = generate_qr_code(f"{settings.LOCALHOST}/{settings.MEDIA_URL}")  # Генерация QR-кода с URL на PDF
         response = HttpResponse(content_type="image/png")
         qr_code.save(response, "PNG")  # Сохранение QR-кода в ответ
-        return response
+        # return response
 
     except Exception as e:
         raise IOError(f"Ошибка генерации PDF или QR-кода: {str(e)}")
